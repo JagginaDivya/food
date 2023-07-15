@@ -5,15 +5,13 @@ import com.example.food.Model.MenuModel;
 import com.example.food.entity.MenuEntity;
 import com.example.food.service.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
+@RequestMapping("/food")
 public class MenuController {
     @Autowired
     MenuService menuService;
